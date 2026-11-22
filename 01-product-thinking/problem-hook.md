@@ -42,7 +42,7 @@ _Read your hook back as a skeptical stakeholder. If you don't feel the urgency, 
 |---|---|
 | Is the business risk high-stakes enough to justify a new initiative? | Yes, it's high enough risk because our biggest account is looking at competitors to switch to. |
 | Is the moment of misery systemic, or just an edge case? | Systemic problem. |
-| Does the value proposition actually remove the obstacle? | Yes, if cutting legacy features makes the core coordination workflow fast enough that outside tools and exports aren't needed. |
+| Does the value proposition actually remove the obstacle? | Yes, if cutting legacy features makes the core coordination workflow fast enough that WhatsApp and texts aren't needed. |
 
 ## 7. Finalized hypothesis _(complete in Module 3)_
 
