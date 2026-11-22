@@ -20,19 +20,19 @@ _The big-picture business risk. If the company does nothing for 12 months, what 
 
 _The specific point where the product fails the user, forcing a manual workaround (Google, spreadsheets, group texts, a competitor)._
 
-> The user is currently forced to leave RouteLogic when a delivery runs late: a dispatcher who needs to re-route a truck in real time can't wait on the slow live view, so they export the fleet data to a spreadsheet or outside tool and work out the new route by hand. This happens [how often, e.g. several times per shift] and costs [X minutes] each time, while the driver and customer wait.
+> The user is currently forced to leave RouteLogic when a delivery runs late: a dispatcher who needs to re-route a truck in real time can't trust the board, where driver status lags 20 to 60 minutes, and can't count on the change reaching the driver, since reassignments take 8 to 15 minutes to arrive with no push notification. So they coordinate through a WhatsApp group and direct texts instead, sending every change twice. This happens [how often, e.g. several times per shift] and each change takes 8 to 15 minutes to reach the driver, while the driver and customer wait.
 
 ## 4. Problem hook
 
 _One urgent sentence fusing the business risk and the user pain, your pitch for why this is the most important thing to work on right now._
 
-> We must stop our largest enterprise account and others from leaving for competitors by fixing the slow workflows that force dispatchers to use outside tools and exports just to coordinate their fleet in real time.
+> We must stop our largest enterprise account and others from leaving for competitors by fixing the slow workflows that force dispatchers to use WhatsApp and texts just to coordinate their fleet in real time.
 
 ## 5. Value proposition
 
 _Who it's for, the new value, and why it's urgent to launch now._
 
-> For **dispatchers and fleet managers responsible for real-time fleet coordination**, we will **make RouteLogic the fastest way to coordinate a fleet in real time, so they can re-route, reassign, and resolve issues without leaving the product for spreadsheets or outside tools. We'll get there by reclaiming the product's operational simplicity: using existing user research to audit the current experience, keep what's essential to the core coordination workflow, and cut the legacy noise that slows it down,** because **our largest enterprise account is already evaluating competitors, and others are likely to follow**.
+> For **dispatchers and fleet managers responsible for real-time fleet coordination**, we will **make RouteLogic the fastest way to coordinate a fleet in real time, so they can re-route, reassign, and resolve issues without leaving the product for WhatsApp, texts, or other outside tools. We'll get there by reclaiming the product's operational simplicity: using existing user research to audit the current experience, keep what's essential to the core coordination workflow, and cut the legacy noise that slows it down,** because **our largest enterprise account is already evaluating competitors, and others are likely to follow**.
 
 ## 6. Cold-read self-review
 
