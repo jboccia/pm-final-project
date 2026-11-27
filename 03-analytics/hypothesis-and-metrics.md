@@ -6,12 +6,44 @@
 
 ## Finalized product hypothesis
 
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
+> Based on dispatcher feedback that the app reliability forces fallback calls and texts and coordinator CSAT for scheduling is low (2.6), I believe that making live driver location and route-change delivery reliable for real-time dispatchers will result in delays being corrected before customers notice them, as measured by a 30% improvement in CSAT. I will protect on-time delivery rate, dispatcher time-to-resolve per exception, and driver app battery and data usage, and will make a go/no-go decision after 4 weeks of user interviews (with a checkpoint at week 2).
 
 ## Success metrics
 
 | Metric | Type | Target | Why it matters |
 |---|---|---|---|
-| _North-star_ | | _____ | _____ |
-| _Leading indicator_ | | _____ | _____ |
-| _Guardrail_ | | _____ | _____ |
+| _North-star_ CSAT (coordinators / dispatchers) | Outcome | +30% (from 2.6) | Dispatchers can act on delivery problems before customers experience them, because they have trustworthy live visibility into every driver and a dependable channel to get changes to them. |
+| _Leading indicator_ [workflow completion after Route Assignment] | Initiative signal | [target, from 31% completion today] | 69% of Coordinators abandon the workflow after Route Assignment; this should move first if the board becomes trustworthy. |
+| _Guardrail_ Scheduling CSAT for coordinators; on-time delivery rate; dispatcher time-to-resolve per exception; driver app battery and data usage | Product signal | Must not drop | Protects the existing base while live tracking and route-change delivery change. |
+
+## Pre-work · Hypothesis check
+
+- **Role, who you are solving for (from M2):** The Real-Time Dispatcher: an operations dispatcher, often on night shift, who reassigns stops and steers drivers through late or failed deliveries as they happen.
+- **Goal, what this user is ultimately trying to achieve:** See where every driver really is and get route changes to them right away, so delays get fixed before customers notice.
+- **Friction / moment of misery, the specific pain blocking their goal:** The board can't be trusted. Driver status lags 20 to 60 minutes and completed stops still show as "in progress," so the dispatcher runs the fleet from a WhatsApp group. A night-shift dispatcher said outright that the board can't be trusted.
+- **Current workaround, the external tool or manual process they rely on (M2):** A WhatsApp group with drivers, direct texts and phone calls to drivers.
+- **Problem Hook, your one-sentence framing of the business crisis (M1):** We must stop our largest enterprise account and others from leaving for competitors by fixing the slow workflows that force dispatchers to use WhatsApp and texts just to coordinate their fleet in real time.
+- **Value Proposition, the outcome your initiative promised to deliver (M1):** For dispatchers and fleet managers responsible for real-time fleet coordination, we will make RouteLogic the fastest way to coordinate a fleet in real time, so they can re-route, reassign, and resolve issues without leaving the product for WhatsApp, texts, or other outside tools. We'll get there by reclaiming the product's operational simplicity: using existing user research to audit the current experience, keep what's essential to the core coordination workflow, and cut the legacy noise that slows it down, because our largest enterprise account is already evaluating competitors, and others are likely to follow.
+
+## Read your data snapshots
+
+- **Does the funnel data confirm your M2 friction point, or does it tell a different story? Note where the numbers align with the qualitative pain you found and where they diverge.:** _(not filled in)_
+- **Do the retention patterns align with the workaround your M2 persona used to find content? Note what the Mo. 0→1 drop suggests about the onboarding experience your persona described as frustrating.:** _(not filled in)_
+- **Does the LTV gap and the content mix (61% trending for Wanderers) confirm the moment of misery your persona described? Note which segment your persona is in and whether the data confirms their pain.:** _(not filled in)_
+- **Does the low adoption confirm your persona is burdened by tools they don't use? Note whether the low scheduling adoption (42%) for coordinators matches your M2 moment of misery.:** Yes it does
+- **Does the workflow data match the manual process or hack you documented in M2? Note whether the specific drop-offs or time gaps explain why your persona avoids the digital tool.:** Yes absolutely
+- **Look at the CSAT heatmap. Which specific cell most directly maps to your persona's friction? Note how the NPS trend justifies the urgency of your M1 Problem Hook.:** Reporting coordinators - 1.3
+
+## Step 3 · Craft your hypothesis
+
+- **Qualitative evidence (from M2), quote the specific friction / moment of misery for your persona:** App crashes when users really need it to track and make updates to deliveries
+- **Quantitative evidence (from M3), name the metric or data point that confirms the pain; cite the number:** 69% of Coordinators abandon the workflow after Route Assignment.
+- **Persona, role, goal, and the friction you confirmed in the reconciliation steps:**
+  - Role: The Real-Time Dispatcher: an operations dispatcher, often on night shift, who reassigns stops and steers drivers through late or failed deliveries as they happen.
+  - Goal: See where every driver really is and get route changes to them right away, so delays get fixed before customers notice.
+  - Friction point: unreliable app
+- **Problem you are solving, one sentence describing the specific friction this initiative removes:** Dispatchers can't trust the driver app to show where drivers actually are or to deliver route changes promptly, so they can't fix delays before customers feel them.
+- **Strategic outcome, what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Coordinators can waste less time on answering questions
+- **Primary success metric (initiative signal), the leading indicator that tells you the gap is closing:** Dispatchers can act on delivery problems before customers experience them, because they have trustworthy live visibility into every driver and a dependable channel to get changes to them.
+- **Guardrail metric (product signal), the metric that must NOT drop; it protects your existing base:** Scheduling CSAT for coordinators
+- **Decision window, how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** 4 weeks of user interviews and a pilot running quickly, with a formal checkpoint at week 2. Main hypothesis we need to validate is how much churn is expected to improve if we pursue this path.
