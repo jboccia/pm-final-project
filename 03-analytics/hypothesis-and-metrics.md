@@ -48,5 +48,3 @@
 - **Guardrail metric (product signal), the metric that must NOT drop; it protects your existing base:** Scheduling CSAT for coordinators
 - **Decision window, how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** A 4-week pilot, including the largest enterprise account, with interviews running alongside it.
   - **Week 2:** stop or change course if average daily time lost to manual workarounds does not decrease by 10 minutes or if the Assign Routes via Optimizer step does not decrease by 3 minutes.
-  - **Week 4 go/no-go:** scale if at least [X%] of reassignments go through RouteLogic without a follow-up WhatsApp message or text, and CSAT is trending toward the +30% target, with no guardrail drop. Pivot if the board is trusted but WhatsApp use doesn't fall. Kill if neither moves.
-  - Churn impact can't be proven in 4 weeks; we use in-app coordination as the leading signal and track renewal of the pilot accounts after that.
