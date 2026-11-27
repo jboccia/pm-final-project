@@ -6,14 +6,14 @@
 
 ## Finalized product hypothesis
 
-> Based on dispatcher feedback that the app reliability forces fallback calls and texts and coordinator CSAT for scheduling is low (2.6), I believe that making live driver location and route-change delivery reliable for real-time dispatchers will result in delays being corrected before customers notice them, as measured by a 30% improvement in CSAT. I will protect on-time delivery rate, dispatcher time-to-resolve per exception, and driver app battery and data usage, and will make a go/no-go decision after 4 weeks of user interviews (with a checkpoint at week 2).
+> Based on a night-shift dispatcher's report that the board can't be trusted, which forces fallback calls and texts, and reporting coordinator CSAT of 1.3, I believe that making live driver location and route-change delivery reliable for real-time dispatchers will result in delays being corrected before customers notice them, as measured by a 30% improvement in CSAT. I will protect on-time delivery rate, dispatcher time-to-resolve per exception, and driver app battery and data usage, and will make a go/no-go decision after a 4-week pilot (with a checkpoint at week 2).
 
 ## Success metrics
 
 | Metric | Type | Target | Why it matters |
 |---|---|---|---|
-| _North-star_ CSAT (coordinators / dispatchers) | Outcome | +30% (from 2.6) | Dispatchers can act on delivery problems before customers experience them, because they have trustworthy live visibility into every driver and a dependable channel to get changes to them. |
-| _Leading indicator_ [workflow completion after Route Assignment] | Initiative signal | [target, from 31% completion today] | 69% of Coordinators abandon the workflow after Route Assignment; this should move first if the board becomes trustworthy. |
+| _North-star_ CSAT (reporting coordinators) | Outcome | +30% (from 1.3) | Dispatchers can act on delivery problems before customers experience them, because they have trustworthy live visibility into every driver and a dependable channel to get changes to them. |
+| _Leading indicator_ Average daily time lost to manual workarounds per dispatcher | Initiative signal | Down 10 minutes per day by week 2 (baseline: 31 minutes per day) | Workarounds (WhatsApp roll calls, double-messaging reassignments, reading stops aloud) are the time dispatchers lose because the board can't be trusted; this should fall first if the fix works. |
 | _Guardrail_ Scheduling CSAT for coordinators; on-time delivery rate; dispatcher time-to-resolve per exception; driver app battery and data usage | Product signal | Must not drop | Protects the existing base while live tracking and route-change delivery change. |
 
 ## Pre-work · Hypothesis check
@@ -36,14 +36,15 @@
 
 ## Step 3 · Craft your hypothesis
 
-- **Qualitative evidence (from M2), quote the specific friction / moment of misery for your persona:** App crashes when users really need it to track and make updates to deliveries
+- **Qualitative evidence (from M2), quote the specific friction / moment of misery for your persona:** A night-shift dispatcher states the board cannot be trusted: driver status lags 20 to 60 minutes and completed stops still show as "in progress," so dispatchers describe a WhatsApp group as the "real system."
 - **Quantitative evidence (from M3), name the metric or data point that confirms the pain; cite the number:** 69% of Coordinators abandon the workflow after Route Assignment.
 - **Persona, role, goal, and the friction you confirmed in the reconciliation steps:**
   - Role: The Real-Time Dispatcher: an operations dispatcher, often on night shift, who reassigns stops and steers drivers through late or failed deliveries as they happen.
   - Goal: See where every driver really is and get route changes to them right away, so delays get fixed before customers notice.
   - Friction point: unreliable app
 - **Problem you are solving, one sentence describing the specific friction this initiative removes:** Dispatchers can't trust the driver app to show where drivers actually are or to deliver route changes promptly, so they can't fix delays before customers feel them.
-- **Strategic outcome, what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Coordinators can waste less time on answering questions
-- **Primary success metric (initiative signal), the leading indicator that tells you the gap is closing:** Dispatchers can act on delivery problems before customers experience them, because they have trustworthy live visibility into every driver and a dependable channel to get changes to them.
+- **Strategic outcome, what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Dispatchers stop running the fleet from WhatsApp and texts and coordinate inside RouteLogic, because the board shows where drivers really are and route changes reach drivers right away. That moves RouteLogic back to being the system of record for daily operations, which protects retention: it answers the main complaint of the enterprise account now trialing a leaner competitor and the renewal at risk from low frontline adoption. Measured by saved churn through the renewal of the largest enterprise account at risk.
+- **Primary success metric (initiative signal), the leading indicator that tells you the gap is closing:** Average daily time a dispatcher loses to manual workarounds (WhatsApp roll calls, re-sending reassignments by text, reading stops aloud to drivers). Target: down 10 minutes per day by the week 2 checkpoint, from a baseline of 31 minutes per day.
 - **Guardrail metric (product signal), the metric that must NOT drop; it protects your existing base:** Scheduling CSAT for coordinators
-- **Decision window, how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** 4 weeks of user interviews and a pilot running quickly, with a formal checkpoint at week 2. Main hypothesis we need to validate is how much churn is expected to improve if we pursue this path.
+- **Decision window, how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** A 4-week pilot, including the largest enterprise account, with interviews running alongside it.
+  - **Week 2:** stop or change course if average daily time lost to manual workarounds does not decrease by 10 minutes or if the Assign Routes via Optimizer step does not decrease by 3 minutes.
